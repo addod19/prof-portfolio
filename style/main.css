@@ -1,12 +1,29 @@
 * {
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 main {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 100%;
+    background: lightblue;
+    margin: 0;
+}
+.intro {
     width: 100%;
-    height: 5em;
+    height: 20em;
     background: gray;
+}
+.projects {
+    width: 100%;
+    height: 30em;
+    background: indianred;
+}
+footer {
+    width: 100%;
+    height: 10em;
+    background: lawngreen;
 }
