@@ -1,12 +1,24 @@
-// const Project = (title, description, liveLink, sourceLink, image, ...skills) => {
-//     const getTitle = () => title;
-//     const getDescription = () => description;
-//     const getSkills = () => skills;
-//     const getLiveLink = () => liveLink;
-//     const getSourceLink = () => sourceLink;
-//     const getImage = () => image;
 
-//     return {getTitle, getDescription, getSkills, getLiveLink, getSourceLink, getImage};
-// };
+const view = ( () => {
 
-// export default Project;
+    const mainContainer = () => {
+        const container = document.createElement('div');
+        container.classList.add('container');
+
+        const intro = document.createElement('div');
+        intro.classList.add('intro');
+        
+        container.innerHTML = intro;
+
+        container.appendChild(intro);
+
+        const projects = document.createElement('div');
+        projects.classList.add('projects');
+        container.appendChild(projects);
+    }
+
+    return { mainContainer };
+})();
+
+
+export default view;
